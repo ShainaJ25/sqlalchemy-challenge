@@ -55,7 +55,6 @@ def welcome():
         f"/api/v1.0/start/end"
     )
     
-
 @app.route("/api/v1.0/precipitation")
 def precipitation():
    session = Session(engine)
@@ -88,6 +87,7 @@ def tobs():
    
 
 #Used Xpert Learning Assistant
+
 @app.route("/api/v1.0/<start>")
 def start(start=None):
    session = Session(engine)
